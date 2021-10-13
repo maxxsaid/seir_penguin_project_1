@@ -1,0 +1,75 @@
+/* ******************************
+** HEADING
+****************************** */
+
+h1 {
+  text-align: center;
+  color: tomato;
+}
+
+/* ******************************
+**Question
+****************************** */
+
+#question {
+  width: 70%;
+  padding: 30px;
+  border: 3px solid blue;
+  background-color: royalblue;
+  color: white;
+  font-size: 28px;
+  margin: 10px auto;
+}
+
+/* ******************************
+** Answers
+****************************** */
+
+#answer {
+  width: 50%;
+  margin: 40px auto;
+  color: bisque;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#answer ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#answer ul li {
+  width: 40%;
+  height: 40px;
+  background-color: darkslategrey;
+  padding-top: 15px;
+  text-align: center;
+  margin: 5px;
+  font-weight: bolder;
+}
+
+/* ******************************
+** ScoreBoard
+****************************** */
+
+#scores {
+  display: flex;
+  width: 50%;
+  background-color: darkslategray;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+#player1,
+#player2 {
+  width: 30%;
+  background-color: darkseagreen;
+  margin: 30px;
+  text-align: center;
+}
