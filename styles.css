@@ -61,6 +61,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+  padding: 0;
 }
 
 #answer ul li {
@@ -125,8 +126,8 @@ ul li:hover {
     text-align: center;
   }
   h1 {
-    font-size: 3.3em;
-    margin-bottom: auto;
+    font-size: 4em;
+    padding: 12px;
   }
   #question {
     font-size: 1.6em;
@@ -137,15 +138,17 @@ ul li:hover {
     width: fit-content;
   }
   #answer ul {
-    width: fit-content;
     display: flex;
     flex-wrap: wrap;
   }
   #answer ul li {
-    width: 30%;
-    padding: 15px;
+    width: 90%;
+    padding: 20px 10px 10px 10px;
   }
-
+  ul li:hover {
+    transform: none;
+    cursor: pointer;
+  }
   #scores {
     width: fit-content;
   }
@@ -154,6 +157,6 @@ ul li:hover {
     font-size: 1em;
     padding: 10px;
     height: 70px;
-    width: 40;
+    width: 40%;
   }
 }
