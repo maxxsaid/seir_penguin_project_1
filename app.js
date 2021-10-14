@@ -11,7 +11,7 @@ const state = {
 let questions = [];
 
 alert(
-  "Welcome to New York City Trivia. This game is played between 2 players. Each player takes turns picking one of the 4 answers provided. First player to reach 20 wins the game. Good Luck!!"
+  "Welcome to New York City Trivia. This game is played between 2 players. Each player takes turns picking one of the 4 answers provided. First player to reach 10 points, wins the game. Good Luck!!"
 );
 /////////////////////////////////////////////////
 //                   DOM element
@@ -64,10 +64,10 @@ const setBoard = (q) => {
   $("li").on("click", (event) => {
     chooseAnswer(event, randomQuestion);
   });
-  if (state.player1 === 20) {
+  if (state.player1 === 10) {
     state.which = false;
     alert("Player 1 has won! Refresh to restart");
-  } else if (state.player2 === 20) {
+  } else if (state.player2 === 10) {
     state.which = false;
     alert("Player 2 has won! Refresh to restart");
   }
