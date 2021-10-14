@@ -8,13 +8,14 @@ body {
   background-image: url("http://papers.co/wallpaper/papers.co-no67-city-builiding-architecture-newyork-nature-bw-dark-34-iphone6-plus-wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   width: 100%;
   height: auto;
 }
 
 h1 {
   text-align: center;
-  color: rgb(184, 28, 28);
+  color: rgb(96, 76, 134);
   font-size: 6.4em;
   font-family: "Indie Flower", cursive;
   margin-bottom: -45px;
@@ -27,9 +28,9 @@ h1 {
 #question {
   width: 70%;
   padding: 30px;
-  border: 3px solid black;
-  background-color: rgb(83, 83, 83, 0.3);
-  color: black;
+  /* border: 3px solid black; */
+  background-color: rgb(83, 83, 83, 0.2);
+  color: rgb(47, 45, 58);
   font-size: 2em;
   margin: 10px auto;
   text-align: center;
@@ -45,8 +46,8 @@ h1 {
   width: 70%;
   margin: 30px auto;
   color: rgb(247, 244, 206);
-  border: 3px solid black;
-  background-color: rgb(70, 70, 70, 0.7);
+  /* border: 3px solid black; */
+  background-color: rgb(70, 70, 70, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +66,7 @@ h1 {
 #answer ul li {
   width: 50%;
   height: 40px;
-  background-color: rgb(70, 70, 70, 0.7);
+  background-color: rgb(70, 70, 70, 0.5);
   padding-top: 15px;
   text-align: center;
   margin: 3px;
@@ -89,8 +90,8 @@ ul li:hover {
   display: flex;
   width: 70%;
   padding: 0 30px;
-  border: 3px solid black;
-  background-color: rgb(70, 70, 70, 0.7);
+  /* border: 3px solid black; */
+  background-color: rgb(70, 70, 70, 0.4);
   color: black;
   justify-content: center;
   margin: 30px auto;
@@ -101,12 +102,58 @@ ul li:hover {
 #player1,
 #player2 {
   width: 40%;
-  background-color: rgb(30, 30, 30, 0.7);
+  background-color: rgb(230, 230, 230, 0.6);
   border: 3px solid black;
   margin: 30px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 1.4em;
-  color: rgb(247, 244, 206);
+  color: black;
   border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    width: fit-content;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.3em;
+    margin-bottom: auto;
+  }
+  #question {
+    font-size: 1.6em;
+    width: fit-content;
+  }
+  #answer {
+    font-size: 0.7em;
+    width: fit-content;
+  }
+  #answer ul {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #answer ul li {
+    width: 30%;
+    padding: 15px;
+  }
+
+  #scores {
+    width: fit-content;
+  }
+  #player1,
+  #player2 {
+    font-size: 1em;
+    padding: 10px;
+    height: 70px;
+    width: 40;
+  }
 }
