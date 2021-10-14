@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Explain what is your project here, what does it do, etc.
+A very simple website to test the knowledge of New York City. Welcome to New York City Trivia. Made for 2 players. Each player takes a turn answering a question about NYC, by picking out of 4 options provided.
 
 ## Technologies Used
 
@@ -13,26 +13,31 @@ Explain what is your project here, what does it do, etc.
 -JS
 -jQuery
 
+## HTML
+
+Made 4 different LI's for 4 different choices (a,b,c,d) and 2 IDs of players to keep track of scores.
+
+## CSS
+
+Added a backgroung image of NYC, and matched the color and font to fit the aesthetic I was going for.
+
+Added a hover on LI's, so whenever a user hovers over the options, they get slightly bigger.
+
+Added the transparency on DIVs, so the user could see the background but also not get distracted by it too much.
+
+Added a pointer when the user hovers over the choices.
+
+## JS & jQuery
+
+Used ajax to pull API from Contentful.
+Randomized every question.
+Added an alert when the user clicks an option to give feedback.
+Added a win scenario, where the first player to score 10 points wins the game. (an alert pops up)
+
 ## Challenges
 
-#### I have trouble with
+#### I had trouble with
 
-My code looked like this
+One of the problems I had was making it mobile friendly. Divs weren't aligning how I wanted them to, but I ended up fixing it by trying different methods. (flexbox/float/padding)
 
-```js
-console.log("hello");
-```
-
-It was a giving me a problem... when it was fixed it looked like this:
-
-```js
-console.log("goodbye");
-```
-
-#### Example Table
-
-| Column 1 | Column 2 |
-| -------- | -------- |
-| thing 1  | thing 2  |
-| hello    | goodbye  |
-
+Another probelm I had was adding a pop up box instead of using "alert", but i couldn't figure it out.

@@ -9,6 +9,10 @@ const state = {
 };
 
 let questions = [];
+
+alert(
+  "Welcome to New York City Trivia. This game is played between 2 players. Each player takes turns picking one of the 4 answers provided. First player to reach 20 wins the game. Good Luck!!"
+);
 /////////////////////////////////////////////////
 //                   DOM element
 /////////////////////////////////////////////////
@@ -27,7 +31,7 @@ const $p2score = $("#player2 h4");
 const chooseAnswer = (event, question) => {
   console.log(event);
   if (event.target.innerText === question.answer) {
-    console.log("correct");
+    alert("Correct! Next player's turn.");
     if (state.which) {
       state.player1++;
       state.which = !state.which;
@@ -37,7 +41,7 @@ const chooseAnswer = (event, question) => {
     }
     setBoard(questions);
   } else {
-    console.log("incorrect");
+    alert("Incorrect! Next player's turn.");
     setBoard(questions);
     state.which = !state.which;
   }
@@ -60,6 +64,13 @@ const setBoard = (q) => {
   $("li").on("click", (event) => {
     chooseAnswer(event, randomQuestion);
   });
+  if (state.player1 === 20) {
+    state.which = false;
+    alert("Player 1 has won! Refresh to restart");
+  } else if (state.player2 === 20) {
+    state.which = false;
+    alert("Player 2 has won! Refresh to restart");
+  }
 };
 
 /////////////////////////////////////////////////
