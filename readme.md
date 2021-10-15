@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A very simple website to test the knowledge of New York City. Welcome to New York City Trivia. Made for 2 players. Each player takes a turn answering a question about NYC, by picking out of 4 options provided.
+A very simple website to test the player's knowledge of New York City. Welcome to New York City Trivia. Made for 2 players. Each player takes a turn answering a question about NYC, by picking out of 4 options provided.
 
 ## Technologies Used
 
